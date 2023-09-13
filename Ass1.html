@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp</title>
+</head>
+<body>
+    <script>
+        let text = "All my life i have always wanted to be a 'Renowned and a good Professional Software Developer.' "
+        let process = /(^|\W)'|'(\W]$)/ig
+        let final = text.replace(process, '$1"')
+        console.log(final) 
+    </script>
+</body>
+</html>

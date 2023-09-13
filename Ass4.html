@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RegExp</title>
+  </head>
+  <body>
+    <script>
+      //numbers again
+      function isValidJavaScriptNumber(input) {
+        const pattern = /^[+-]?\d*\.?\d+(?:[eE][+-]?\d+)?$/;
+        return pattern.test(input);
+      }
+
+      // cases
+      console.log(isValidJavaScriptNumber("134")); // true
+      console.log(isValidJavaScriptNumber("-67")); // true
+      console.log(isValidJavaScriptNumber("999")); // true
+      console.log(isValidJavaScriptNumber("5e-3")); // true
+      console.log(isValidJavaScriptNumber("1E67")); // true
+      console.log(isValidJavaScriptNumber(".9")); // true
+      console.log(isValidJavaScriptNumber)(".");
+    </script>
+  </body>
+</html>

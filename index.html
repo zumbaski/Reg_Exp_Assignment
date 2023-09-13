@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RegExp</title>
+  </head>
+  <body>
+    <script>
+      // Regexp golf ,car and cat
+      // let process = /ca(r|t)/
+      // let final = process.test("car cat")
+      let final = /ca(r|t)/.test("car cat");
+      console.log(final);
+
+      // pop and prop
+      // let process2 = /(p|pr)op/
+      // let final2 = process2.test("pop prop")
+      let final2 = /pop|prop/.test("pop prop");
+      console.log(final2);
+
+      // ferret, ferry, ferrari
+      let process3 = /ferr(et|y|ari)/;
+      let final3 = process3.test("ferret, ferry, ferrari");
+      console.log(final3);
+
+      //any word ending in ious
+      let process4 = /\b\w+ious/;
+      let final4 = process4.test("Malicious");
+      console.log(final4);
+
+      // a white space character
+      let process5 = /\s[.,;:]/;
+      let final5 = process5.test(" .,;:");
+      console.log(final5);
+
+      //any word longer than 6 letters
+      let process6 = /\w[6,]/;
+      let final6 = process6.test("Valentine");
+      console.log(final6);
+
+      //any word without e
+      let process7 = /\b[^eE\s]+\b/;
+      let final7 = process7.test("plough");
+      console.log(final7);
+    </script>
+  </body>
+</html>
